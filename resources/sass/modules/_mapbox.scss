@@ -1,0 +1,12 @@
+//mapbox default styles
+.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+.mapboxgl-ctrl-bottom-right {
+    display: none !important;
+}
+
+#map {
+    width: 400px;
+    height: 400px;
+}
