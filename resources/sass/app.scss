@@ -1,8 +1,16 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+
 @import 'modules/mapbox.scss';
+@import 'modules/nav.scss';
+@import 'modules/skews.scss';
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+}

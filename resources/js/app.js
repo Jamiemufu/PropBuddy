@@ -37,19 +37,16 @@ import UIkit from 'uikit'
 import css from 'uikit/dist/css/uikit.css';
 import Icons from 'uikit/dist/js/uikit-icons';
 
-var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
-
-mapboxgl.accessToken = 'pk.eyJ1IjoiamFtaWVtdWZ1IiwiYSI6ImNrMnVocGs0azB6YmMzY3I2YnpzeWFoOWgifQ.0fLFGw1zHa503vbVCHX6vw';
-
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
-});
+// var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+//
+// mapboxgl.accessToken = 'pk.eyJ1IjoiamFtaWVtdWZ1IiwiYSI6ImNrMnVocGs0azB6YmMzY3I2YnpzeWFoOWgifQ.0fLFGw1zHa503vbVCHX6vw';
+//
+// var map = new mapboxgl.Map({
+//     container: 'map',
+//     style: 'mapbox://styles/mapbox/streets-v11'
+// });
 
 
 
 // loads the Icon plugin
 UIkit.use(Icons);
-
-// components can be called from the imported UIkit reference
-UIkit.notification('Hello world.');
