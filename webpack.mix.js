@@ -13,4 +13,5 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
-    .styles('node_modules/mapbox-gl/dist/mapbox-gl.css', 'public/css/mapbox-gl.css');
+    .styles('node_modules/mapbox-gl/dist/mapbox-gl.css', 'public/css/mapbox-gl.css')
+    .styles('node_modules/uikit/dist/css/uikit.css', 'public/css/uikit.css');
