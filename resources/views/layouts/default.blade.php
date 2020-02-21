@@ -21,7 +21,7 @@
 
 {{--hero main search section--}}
 {{--first section--}}
-<div class="uk-background-cover" style="background-image: url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/-2.1707,52.5699,17.01/1280x500@2x?access_token={{env('MAPBOX_API_KEY')}}')">
+<div class="uk-background-fixed" style="background-image: url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/-2.1707,52.5699,17.01/1280x550@2x?access_token={{env('MAPBOX_API_KEY')}}')">
     <div class="skew-cs"></div>
     <div class="colour-block first-block main-search">
         {{-- section and container in here--}}
