@@ -1,72 +1,94 @@
 nav {
     height: 50px;
-    position: fixed !important;
+    position: fixed;
     top: 0;
     z-index: 100;
+    width: 100%;
 
     a {
         padding: 0;
-
-        :hover {
-            color: black;
+        left: 0;
+        &:hover {
+            color: #212529;
         }
+    }
+
+    .full-nav {
+        height: 100%;
+        width: 0;
+        //visibility: hidden;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
     }
 
     .menu {
-        margin-left: 20px;
-        margin-top: 10px;
-
-        :hover {
+        margin: 20px;
+        right: 0;
+        top: 0;
+        position: absolute;
+        a:hover {
             color: black;
         }
     }
-}
-
-.nav {
-    width: 100%;
-    display: flex;
-    background: #823A9C;
-    color: white;
-
-    .uk-search-input {
+    .nav {
+        background: #823A9C;
         color: white;
+        width: 100%;
+        .uk-search {
+            margin-top: 200px;
+            width: 100%;
+            opacity: 0;
 
-        &::placeholder {
-            color: white;
         }
-    }
+        .uk-search-input {
+            color: white;
 
-    ul {
-        list-style: none;
-        padding-left: 0;
-        color: white;
-
-        li {
-            font-size: 2.625rem;
-            text-align: center;
-            margin: 20px;
-
-            @media screen and (max-width: 400px) {
-                font-size: 1.6rem;
+            &::placeholder {
+                color: white;
             }
         }
+
+        ul {
+            margin: auto;
+            width: 0;
+            list-style: none;
+            padding-left: 0;
+            color: white;
+            opacity: 0;
+            transition: 0.3s;
+            li {
+                font-size: 2.625rem;
+                text-align: center;
+                margin: 20px;
+
+                @media screen and (max-width: 400px) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        svg {
+            height: 30px;
+            width: 30px;
+        }
+
+        .nav-donate {
+            padding-top: 100px;
+        }
     }
 
-    svg {
-        height: 30px;
-        width: 30px;
+    .nav-width-100 {
+        width: 100% !important;
     }
 
-    .uk-modal-close-full {
-        background: none;
-        color: white;
-        padding: 0;
-        margin: 40px;
-    }
-
-    .nav-donate {
-        padding-top: 100px;
+    .nav-show {
+        opacity: 1 !important;
     }
 }
+
+
 
 

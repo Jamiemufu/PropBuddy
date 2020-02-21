@@ -62626,17 +62626,47 @@ var app = new Vue({
 
 
 
- // var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+ // let mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 //
 // mapboxgl.accessToken = 'pk.eyJ1IjoiamFtaWVtdWZ1IiwiYSI6ImNrMnVocGs0azB6YmMzY3I2YnpzeWFoOWgifQ.0fLFGw1zHa503vbVCHX6vw';
 //
-// var map = new mapboxgl.Map({
+// let map = new mapboxgl.Map({
 //     container: 'map',
 //     style: 'mapbox://styles/mapbox/streets-v11'
 // });
 // loads the Icon plugin
 
-uikit__WEBPACK_IMPORTED_MODULE_0___default.a.use(uikit_dist_js_uikit_icons__WEBPACK_IMPORTED_MODULE_2___default.a);
+uikit__WEBPACK_IMPORTED_MODULE_0___default.a.use(uikit_dist_js_uikit_icons__WEBPACK_IMPORTED_MODULE_2___default.a); // nav
+
+var nav = document.getElementById('full-nav');
+var navToggle = document.getElementById('open-nav');
+var navClose = document.getElementById('full-nav-close');
+var navList = document.getElementById('nav-list');
+var navSearch = document.getElementById('nav-search');
+navToggle.addEventListener('click', function () {
+  openNav();
+});
+navClose.addEventListener('click', function () {
+  closeNav();
+});
+
+function openNav() {
+  nav.classList.toggle('nav-width-100');
+  navList.classList.toggle('nav-width-100');
+  setTimeout(function () {
+    navSearch.classList.toggle('nav-show');
+    navList.classList.toggle('nav-show');
+  }, 300);
+}
+
+function closeNav() {
+  navSearch.classList.toggle('nav-show');
+  navList.classList.toggle('nav-show');
+  setTimeout(function () {
+    nav.classList.toggle('nav-width-100');
+    navList.classList.toggle('nav-width-100');
+  }, 300);
+}
 
 /***/ }),
 
