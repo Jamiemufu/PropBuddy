@@ -8,7 +8,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -21,6 +21,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('main-search', require('./components/MainSearch.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,6 +31,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    components: {
+        PulseLoader
+    }
 });
 
 // UIKit imports
@@ -60,8 +64,6 @@ let navSearch = document.getElementById('nav-search');
 let mainSearch = document.getElementById('main-search');
 let navFullSearch =  document.getElementById('nav-full-search');
 
-mainSearch.focus();
-
 navToggle.addEventListener('click', function () {
     openNav();
 
@@ -78,7 +80,7 @@ function openNav() {
         navSearch.classList.toggle('nav-show');
         navList.classList.toggle('nav-show');
     }, 300);
-    navFullSearch.focus();
+
 }
 
 function closeNav() {
@@ -88,5 +90,5 @@ function closeNav() {
         nav.classList.toggle('nav-width-100');
         navList.classList.toggle('nav-width-100');
     }, 300);
-    mainSearch.focus();
+
 }

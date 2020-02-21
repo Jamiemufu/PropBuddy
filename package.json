@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "mapbox-gl": "^1.7.0",
-        "uikit": "^3.3.2"
+        "uikit": "^3.3.2",
+        "vue-spinner": "^1.0.3"
     }
 }
