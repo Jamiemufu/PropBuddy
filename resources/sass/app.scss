@@ -1,8 +1,8 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-@import 'modules/mapbox.scss';
 @import 'modules/nav.scss';
+@import 'modules/mapbox.scss';
 @import 'modules/skews.scss';
 // Variables
 @import 'variables';
@@ -13,4 +13,10 @@
 body,html {
     background-color: white;
     overflow-x: hidden;
+}
+
+//TYPOGRAPHY
+
+h1 {
+    font-size: 2.625rem;
 }

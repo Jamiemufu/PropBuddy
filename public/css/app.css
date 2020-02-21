@@ -1,5 +1,94 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+nav {
+  height: 50px;
+  position: fixed !important;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0;
+}
+
+nav a :hover {
+  color: black;
+}
+
+nav .menu {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+nav .menu :hover {
+  color: black;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  background: #823A9C;
+  color: white;
+}
+
+.nav .uk-search-input {
+  color: white;
+}
+
+.nav .uk-search-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.nav .uk-search-input::-moz-placeholder {
+  color: white;
+}
+
+.nav .uk-search-input:-ms-input-placeholder {
+  color: white;
+}
+
+.nav .uk-search-input::-ms-input-placeholder {
+  color: white;
+}
+
+.nav .uk-search-input::placeholder {
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  padding-left: 0;
+  color: white;
+}
+
+.nav ul li {
+  font-size: 2.625rem;
+  text-align: center;
+  margin: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .nav ul li {
+    font-size: 1.6rem;
+  }
+}
+
+.nav svg {
+  height: 30px;
+  width: 30px;
+}
+
+.nav .uk-modal-close-full {
+  background: none;
+  color: white;
+  padding: 0;
+  margin: 40px;
+}
+
+.nav .nav-donate {
+  padding-top: 100px;
+}
+
 .mapboxgl-ctrl-logo {
   display: none !important;
 }
@@ -11,14 +100,6 @@
 #map {
   height: 400px;
   width: 400px;
-}
-
-nav {
-  height: 50px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 body {
@@ -33,7 +114,8 @@ body {
 }
 
 .colour-block h1,
-.colour-block h3 {
+.colour-block h3,
+.colour-block h5 {
   color: white;
 }
 
@@ -45,7 +127,8 @@ body {
 }
 
 .white-block h1,
-.white-block h3 {
+.white-block h3,
+.white-block h5 {
   color: #823A9C;
 }
 
@@ -100,8 +183,8 @@ body {
 
   .colour-block,
   .white-block {
-    padding-top: 50%;
-    padding-bottom: 30%;
+    padding-top: 30%;
+    padding-bottom: 15%;
   }
 
   .skew-f {
@@ -10997,5 +11080,9 @@ body,
 html {
   background-color: white;
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.625rem;
 }
 
