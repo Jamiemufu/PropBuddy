@@ -62636,13 +62636,16 @@ var app = new Vue({
 // });
 // loads the Icon plugin
 
-uikit__WEBPACK_IMPORTED_MODULE_0___default.a.use(uikit_dist_js_uikit_icons__WEBPACK_IMPORTED_MODULE_2___default.a); // nav
+uikit__WEBPACK_IMPORTED_MODULE_0___default.a.use(uikit_dist_js_uikit_icons__WEBPACK_IMPORTED_MODULE_2___default.a); // nav vars
 
 var nav = document.getElementById('full-nav');
 var navToggle = document.getElementById('open-nav');
 var navClose = document.getElementById('full-nav-close');
 var navList = document.getElementById('nav-list');
 var navSearch = document.getElementById('nav-search');
+var mainSearch = document.getElementById('main-search');
+var navFullSearch = document.getElementById('nav-full-search');
+mainSearch.focus();
 navToggle.addEventListener('click', function () {
   openNav();
 });
@@ -62657,6 +62660,7 @@ function openNav() {
     navSearch.classList.toggle('nav-show');
     navList.classList.toggle('nav-show');
   }, 300);
+  navFullSearch.focus();
 }
 
 function closeNav() {
@@ -62666,6 +62670,7 @@ function closeNav() {
     nav.classList.toggle('nav-width-100');
     navList.classList.toggle('nav-width-100');
   }, 300);
+  mainSearch.focus();
 }
 
 /***/ }),

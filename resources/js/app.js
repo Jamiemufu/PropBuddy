@@ -51,13 +51,16 @@ import Icons from 'uikit/dist/js/uikit-icons';
 // loads the Icon plugin
 UIkit.use(Icons);
 
-// nav
+// nav vars
 let nav = document.getElementById('full-nav');
 let navToggle = document.getElementById('open-nav');
 let navClose = document.getElementById('full-nav-close');
 let navList = document.getElementById('nav-list');
 let navSearch = document.getElementById('nav-search');
+let mainSearch = document.getElementById('main-search');
+let navFullSearch =  document.getElementById('nav-full-search');
 
+mainSearch.focus();
 
 navToggle.addEventListener('click', function () {
     openNav();
@@ -75,6 +78,7 @@ function openNav() {
         navSearch.classList.toggle('nav-show');
         navList.classList.toggle('nav-show');
     }, 300);
+    navFullSearch.focus();
 }
 
 function closeNav() {
@@ -84,4 +88,5 @@ function closeNav() {
         nav.classList.toggle('nav-width-100');
         navList.classList.toggle('nav-width-100');
     }, 300);
+    mainSearch.focus();
 }

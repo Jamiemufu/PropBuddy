@@ -8,7 +8,7 @@
             <div class="nav" uk-height-viewport>
                 <div class="uk-align-center uk-flex-middle">
                     <form class="uk-search uk-search-large" id="nav-search">
-                        <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+                        <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." id="nav-full-search">
                     </form>
                     <ul id="nav-list">
                         <li>Summary</li>
