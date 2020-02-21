@@ -50,6 +50,13 @@ nav .nav .uk-search {
   opacity: 0;
 }
 
+@media screen and (max-width: 900px) {
+  nav .nav .uk-search {
+    margin-top: 20%;
+    font-size: 1.6rem;
+  }
+}
+
 nav .nav .uk-search-input {
   color: white;
 }
@@ -90,9 +97,15 @@ nav .nav ul li {
   margin: 20px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   nav .nav ul li {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav .nav ul li {
+    font-size: 1rem;
   }
 }
 
@@ -103,6 +116,12 @@ nav .nav svg {
 
 nav .nav .nav-donate {
   padding-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  nav .nav .nav-donate {
+    padding-top: 40px;
+  }
 }
 
 nav .nav-width-100 {
