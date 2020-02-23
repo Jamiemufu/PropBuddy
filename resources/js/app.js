@@ -22,6 +22,8 @@ import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('main-search', require('./components/MainSearch.vue').default);
+Vue.component('overview', require('./components/Overview.vue').default);
+Vue.component('rent', require('./components/Rent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.default');
+    return view('pages.search');
 });
+
+//Route::get('/', 'HomeController@propData');
+Route::post('/propertysearch', 'HomeController@getData');

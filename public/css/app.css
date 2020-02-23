@@ -200,14 +200,14 @@ body {
   width: 100%;
   height: 100px;
   position: absolute;
-  left: 0px;
+  left: 0;
   background: linear-gradient(to right bottom, #823A9C 49%, #fff 50%);
 }
 
 .skew-fe {
   width: 100%;
   height: 100px;
-  left: 0px;
+  left: 0;
   background: linear-gradient(to right bottom, rgba(130, 58, 156, 0) 49%, #fff 50%);
 }
 
@@ -258,6 +258,62 @@ body {
   .skew-f {
     margin: 0;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .first-block {
+    padding-top: 40% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .first-block {
+    padding-top: 50% !important;
+  }
+}
+
+.uk-search .uk-search-input {
+  color: white;
+}
+
+.uk-search .uk-search-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.uk-search .uk-search-input::-moz-placeholder {
+  color: white;
+}
+
+.uk-search .uk-search-input:-ms-input-placeholder {
+  color: white;
+}
+
+.uk-search .uk-search-input::-ms-input-placeholder {
+  color: white;
+}
+
+.uk-search .uk-search-input::placeholder {
+  color: white;
+}
+
+.main-search-background {
+  background-color: #823A9C;
+  background-blend-mode: luminosity;
+  opacity: 0.9;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 900px) {
+  .main-search-background {
+    background-attachment: unset;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+.main-search h1,
+.main-search input {
+  text-shadow: 2px 2px #000;
 }
 
 /*!
@@ -11152,40 +11208,5 @@ html {
 
 h1 {
   font-size: 2.625rem;
-}
-
-.uk-search .uk-search-input {
-  color: white;
-}
-
-.uk-search .uk-search-input::-webkit-input-placeholder {
-  color: white;
-}
-
-.uk-search .uk-search-input::-moz-placeholder {
-  color: white;
-}
-
-.uk-search .uk-search-input:-ms-input-placeholder {
-  color: white;
-}
-
-.uk-search .uk-search-input::-ms-input-placeholder {
-  color: white;
-}
-
-.uk-search .uk-search-input::placeholder {
-  color: white;
-}
-
-.uk-background-fixed {
-  background-color: #823A9C;
-  background-blend-mode: luminosity;
-  opacity: 0.9;
-}
-
-.main-search h1,
-.main-search input {
-  text-shadow: 1px 1px #000;
 }
 

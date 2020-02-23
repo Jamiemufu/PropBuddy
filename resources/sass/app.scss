@@ -4,6 +4,7 @@
 @import 'modules/nav.scss';
 @import 'modules/mapbox.scss';
 @import 'modules/skews.scss';
+@import 'modules/main-search.scss';
 // Variables
 @import 'variables';
 
@@ -21,23 +22,3 @@ h1 {
     font-size: 2.625rem;
 }
 
-.uk-search {
-    .uk-search-input {
-        color: white;
-        &::placeholder {
-            color: white;
-        }
-    }
-}
-
-.uk-background-fixed {
-    background-color: #823A9C;
-    background-blend-mode: luminosity;
-    opacity: 0.9;
-}
-
-.main-search {
-    h1,input {
-        text-shadow: 1px 1px #000;
-    }
-}
