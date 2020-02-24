@@ -37,6 +37,7 @@
                 let res = '1280x550@2x';
                 let mapKey = '?access_token=' + this.mapKey;
                 this.url = endpoint + this.long + ',' + this.lat + ',' + zoom + res + mapKey;
+                console.log(url);
             },
             backgroundUpdate() {
                 //todo: Spinner while loading?

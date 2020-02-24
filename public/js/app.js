@@ -1941,7 +1941,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process) {//
+//
 //
 //
 //
@@ -1964,7 +1964,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       'address': '',
       // we already have lat/lng from backgroundImage
-      'mapKey': process.env.MIX_MAPBOX_API_KEY,
+      'mapKey': "pk.eyJ1IjoiamFtaWVtdWZ1IiwiYSI6ImNrMnVocGs0azB6YmMzY3I2YnpzeWFoOWgifQ.0fLFGw1zHa503vbVCHX6vw",
       'url': 'https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/5.3472,54.7617,4.56/1280x550@2x?access_token=pk.eyJ1IjoiamFtaWVtdWZ1IiwiYSI6ImNrMnVocGs0azB6YmMzY3I2YnpzeWFoOWgifQ.0fLFGw1zHa503vbVCHX6vw',
       'long': '',
       'lat': ''
@@ -1978,6 +1978,7 @@ __webpack_require__.r(__webpack_exports__);
       var res = '1280x550@2x';
       var mapKey = '?access_token=' + this.mapKey;
       this.url = endpoint + this["long"] + ',' + this.lat + ',' + zoom + res + mapKey;
+      console.log(url);
     },
     backgroundUpdate: function backgroundUpdate() {//todo: Spinner while loading?
     },
@@ -1986,16 +1987,18 @@ __webpack_require__.r(__webpack_exports__);
 
       var url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + this.address + '.json?access_token=' + this.mapKey;
       axios.get(url).then(function (response) {
+        console.log(response);
         _this.data = response.data.features[0];
         _this["long"] = _this.data.center[0];
         _this.lat = _this.data.center[1];
 
         _this.buildBackground();
+      })["catch"](function (error) {
+        console.log(error);
       });
     }
   }
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -2039,7 +2042,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process) {//
+//
 //
 //
 //
@@ -2053,14 +2056,13 @@ __webpack_require__.r(__webpack_exports__);
     return {
       'address': '',
       // we already have lat/lng from backgroundImage
-      'mapKey': process.env.MIX_MAPBOX_API_KEY,
+      'mapKey': "pk.eyJ1IjoiamFtaWVtdWZ1IiwiYSI6ImNrMnVocGs0azB6YmMzY3I2YnpzeWFoOWgifQ.0fLFGw1zHa503vbVCHX6vw",
       'url': 'https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/5.3472,54.7617,4.56/1280x550@2x?access_token=pk.eyJ1IjoiamFtaWVtdWZ1IiwiYSI6ImNrMnVocGs0azB6YmMzY3I2YnpzeWFoOWgifQ.0fLFGw1zHa503vbVCHX6vw',
       'long': '',
       'lat': ''
     };
   }
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
