@@ -45,11 +45,15 @@
                 let url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + this.address + '.json?access_token=' + this.mapKey;
                 axios.get(url)
                     .then((response) => {
+                        console.log(response);
                         this.data = response.data.features[0];
                         this.long = this.data.center[0];
                         this.lat = this.data.center[1];
                         this.buildBackground();
-                    });
+                    })
+                    .catch((error)=> {
+                        console.log(error);
+                    })
             },
         }
     }
